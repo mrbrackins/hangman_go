@@ -40,7 +40,7 @@ func validatedDifficulty(d int) bool {
 	if fmt.Sprint(reflect.TypeOf(d)) == "int" && d <= 3 {
 
 		if regexp.MustCompile(`1`).MatchString(fmt.Sprint(d)) || regexp.MustCompile(`2`).MatchString(fmt.Sprint(d)) || regexp.MustCompile(`3`).MatchString(fmt.Sprint(d)) {
-			fmt.Println("yo")
+
 			return true
 		}
 	}
